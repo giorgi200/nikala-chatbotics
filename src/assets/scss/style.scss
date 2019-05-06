@@ -10,6 +10,7 @@
 *{
     font-family: "BPG Ingiri", sans-serif !important;
     text-align: center;
+    margin-bottom: 0;
 }
 .bot-media{
     height: 280px !important;
@@ -37,8 +38,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
-
+.filled-uncontrolled{
+    background-color: #fff;
+    width: 40vw !important;
+    margin-bottom: 0 !important;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
 .in{
     font-family: "BPG Nino Mtavruli Bold", sans-serif !important;
   margin: 30px auto;
@@ -47,4 +55,10 @@
   padding-bottom: 0px;
   border: solid 2px #000000;
 
+}
+
+.bot-wd{
+    width: 40vw;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }

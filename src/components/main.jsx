@@ -3,6 +3,7 @@ import Card from "@material-ui/core/Card";
 import CardHeader from "@material-ui/core/CardHeader";
 import CardMedia from "@material-ui/core/CardMedia";
 
+import { Link } from "react-router-dom";
 
 
 
@@ -19,17 +20,21 @@ function NestedGrid() {
             </Card>
 
             <Card className="col-3 p-0">
-                <CardMedia className="bot-media" image={ require('../assets/img/paintings/nikala_38.JPG')} />
-                <CardHeader className="bot-title" title="მეთევზე" />
+                <Link to={"/fishermanbot"}> 
+                    <CardMedia className="bot-media" image={ require('../assets/img/paintings/nikala_38.JPG')} />
+                    <CardHeader className="bot-title" title="მეთევზე" />
+                </Link>
             </Card>
             
             <Card className="col-3 p-0">
-                <CardMedia className="bot-media" image={ require('../assets/img/paintings/nikala_1.JPG')} />
-                <CardHeader className="bot-title" title="გოგონა ბუშტით" />
+                <Link to={"/margaritabot"}> 
+                    <CardMedia className="bot-media" image={ require('../assets/img/paintings/nikala_1.JPG')} />
+                    <CardHeader className="bot-title" title="გოგონა ბუშტით" />
+                </Link>
             </Card>
     
         </div>
-    // </div>
+    </div>
   );
 }
 
