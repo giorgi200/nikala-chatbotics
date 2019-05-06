@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import TextField from '@material-ui/core/TextField';
 import axios from 'axios';
+import DictateButton from 'react-dictate-button';
+import AudioRecorder from 'react-audio-recorder';
 
 
 class Bot extends Component {
@@ -36,10 +38,11 @@ class Bot extends Component {
 
     render() {
         return (
-            <div>
-               <div className="container text-center">
-                    <img src={require('../assets/img/paintings/nikala_38.JPG')} alt="hello" width="30%" className="mb-5" />
-                    <div className="row">
+            <div className="bot-section">
+               <div className="bot-gallery">
+                    <img src={require('../assets/img/paintings/nikala_38.JPG')}  className="mb-5 bot-border" />
+                    <AudioRecorder />
+                    {/* <div className="row">
                         <div className="col-md-6 mx-auto">
                             <div className="mb-0">
                                 <div className="form-group ch-n-m">
@@ -59,7 +62,7 @@ class Bot extends Component {
                                 <audio autoPlay src={"data:audio/mp3;base64," + this.state.audioContent}></audio>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         );
