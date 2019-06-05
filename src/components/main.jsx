@@ -15,8 +15,10 @@ function NestedGrid() {
         <div className="justify-content-around row mx-auto container justify-content-beetween">
             
             <Card className="col-3 p-0">
-                <CardMedia className="bot-media" image={ require('../assets/img/paintings/nikala_28.JPG')} />
-                <CardHeader className="bot-title" title="მარაგარიტა" />
+                <Link to={"/margaritabot"}> 
+                    <CardMedia className="bot-media" image={ require('../assets/img/paintings/nikala_28.JPG')} />
+                    <CardHeader className="bot-title" title="გოგონა ბუშტით" />
+                </Link>
             </Card>
 
             <Card className="col-3 p-0">
@@ -26,12 +28,7 @@ function NestedGrid() {
                 </Link>
             </Card>
             
-            <Card className="col-3 p-0">
-                <Link to={"/margaritabot"}> 
-                    <CardMedia className="bot-media" image={ require('../assets/img/paintings/nikala_1.JPG')} />
-                    <CardHeader className="bot-title" title="გოგონა ბუშტით" />
-                </Link>
-            </Card>
+            
     
         </div>
     </div>
